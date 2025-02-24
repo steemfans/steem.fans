@@ -1,128 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Steem Fans -- by @ety001</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6WF4S7M61S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MX8NVWHVQ5');
-      window.onload = function() {
-        if (location.protocol === 'http:') {
-          location.href = 'https://steem.fans';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steem Fans</title>
+    <!-- 头部关键词和描述 -->
+    <meta name="keywords" content="steem, steemit, ety001, witness">
+    <meta name="description" content="ETY001 is the Steem Witness. Here is all my work for Steem.">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-      };
-    </script>
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .subtitle {
+            font-size: 1.1rem; /* 比正文字体小一号 */
+            color: #6c757d; /* 灰色 */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
-<body style="margin: 15px;">
-  <div class="row">
-    <div class="col-xs-12 col-md-4 col-lg-3">
-      <h1>Steem Fans</h1>
+<body>
+    <div class="container mt-5">
+        <!-- 主标题和副标题 -->
+        <h1 class="text-center mb-2">Steem Fans</h1>
+        <div class="subtitle">What I did as a witness</div>
+
+        <!-- 卡片内容 -->
+        <div class="row">
+            <!-- 每个条目 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">API</div>
+                        <div class="card-content"><a href="https://api.steem.fans">https://api.steem.fans</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">API (proxy)</div>
+                        <div class="card-content"><a href="https://steem.61bts.com">https://steem.61bts.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Seed Node</div>
+                        <div class="card-content">seed.steem.fans:2001</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Steem Blockchain Backup Data</div>
+                        <div class="card-content"><a href="https://files.steem.fans">https://files.steem.fans</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">How to deploy a Steem Witness node by Docker?</div>
+                        <div class="card-content"><a href="https://steemit.com/witness/@ety001/how-to-deploy-a-steem-witness-node-by-docker">https://steemit.com/witness/@ety001/how-to-deploy-a-steem-witness-node-by-docker</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Easy Follow Vote</div>
+                        <div class="card-content"><a href="https://github.com/steemfans/easy-follow-vote">https://github.com/steemfans/easy-follow-vote</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Post To Steem From Github Action</div>
+                        <div class="card-content"><a href="https://github.com/marketplace/actions/post-to-steem-chain-action">https://github.com/marketplace/actions/post-to-steem-chain-action</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Post Article as Schedual</div>
+                        <div class="card-content"><a href="https://github.com/steemfans/post-article-as-schedual">https://github.com/steemfans/post-article-as-schedual</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">AuthSteem (A fork from SteemConnect)</div>
+                        <div class="card-content"><a href="https://auth.steem.fans">https://auth.steem.fans</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Steem Go SDK (underconstruction)</div>
+                        <div class="card-content"><a href="https://github.com/steemit/steemgosdk">https://github.com/steemit/steemgosdk</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Witness ID</div>
+                        <div class="card-content">ety001</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">My Github</div>
+                        <div class="card-content"><a href="https://github.com/ety001/">https://github.com/ety001/</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">My Steemit</div>
+                        <div class="card-content"><a href="https://steemit.com/@ety001">@ety001</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">My Twitter</div>
+                        <div class="card-content"><a href="https://twitter.com/ety001">@ety001</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="row" style="margin-top: 15px;">
-    <div class="col-xs-12 col-md-4 col-lg-3">
-      <div class="panel panel-info">
-        <div class="panel-heading"><i class="bi bi-fire"></i> API</div>
-        <div class="panel-body">
-          <span class="text-info">https://api.steem.fans</span>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="https://github.com/ety001">Github</a>
+            <a href="https://steemit.com/@ety001">Steemit</a>
+            <a href="https://twitter.com/ety001">Twitter</a>
         </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">API (proxy)</div>
-        <div class="panel-body">
-          <span class="text-info">https://steem.61bts.com</span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading"><i class="bi bi-fire"></i> Seed Node</div>
-        <div class="panel-body">
-          <span class="text-info">seed.steem.fans:2001</span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading"><i class="bi bi-fire"></i> Steem Blockchain Backup Data (Recover your node fastly)</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://files.steem.fans" target="_blank">https://files.steem.fans</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">How to deploy a Steem Witness node by Docker?</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://steemit.com/witness/@ety001/how-to-deploy-a-steem-witness-node-by-docker" target="_blank">https://steemit.com/witness/@ety001/how-to-deploy-a-steem-witness-node-by-docker</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">Easy Follow Vote</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://github.com/steemfans/easy-follow-vote" target="_blank">https://github.com/steemfans/easy-follow-vote</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">Post To Steem From Github Action</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://github.com/marketplace/actions/post-to-steem-chain-action" target="_blank">https://github.com/marketplace/actions/post-to-steem-chain-action</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading"><i class="bi bi-fire"></i> Post Article as Schedual</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://github.com/steemfans/post-article-as-schedual" target="_blank">https://github.com/steemfans/post-article-as-schedual</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">AuthSteem (A fork from SteemConnect)</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://auth.steem.fans" target="_blank">https://auth.steem.fans</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading"><i class="bi bi-fire"></i> Steem Go SDK (underconstruction)</div>
-        <div class="panel-body">
-          <span class="text-info">
-            <a href="https://github.com/steemit/steemgosdk" target="_blank">https://github.com/steemit/steemgosdk</a>
-          </span>
-        </div>
-      </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">Witness ID</div>
-        <div class="panel-body">
-          <span class="text-info">ety001</span>
-          <button type="button" class="btn btn-primary">
-            <a href="https://auth.steem.fans/sign/account-witness-vote?witness=ety001&approve=1" target="_blank" style="color: white; font-weight: bolder;">Vote Me</a>
-          </button>
-        </div>
-      </div>
-      <hr />
-      <div class="aff">
-        <p>
-          <a href="https://github.com/steemfans/" target="_blank">Github</a> |
-          <a href="https://steemit.com/@ety001" target="_blank">Steemit</a> |
-          <a href="https://twitter.com/ETY001" target="_blank">Twitter</a> |
-          <a href="https://t.me/ety001" target="_blank">Telegram</a>
-        </p>
-      </div>
-    </div>
-  </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
