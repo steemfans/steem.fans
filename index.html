@@ -7,6 +7,8 @@
     <!-- 头部关键词和描述 -->
     <meta name="keywords" content="steem, steemit, ety001, witness">
     <meta name="description" content="ETY001 is the Steem Witness. Here is all my work for Steem.">
+    <!-- Favicon -->
+    <link rel="icon" href="https://steem.fans/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -15,9 +17,13 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 100%; /* 固定卡片高度 */
+            display: flex;
+            flex-direction: column;
         }
         .card-body {
             padding: 20px;
+            flex: 1; /* 让内容撑满卡片 */
         }
         .card-title {
             font-weight: bold;
@@ -50,6 +56,18 @@
             color: #6c757d; /* 灰色 */
             text-align: center;
             margin-bottom: 30px;
+        }
+        .btn-vote {
+            background-color: #28a745; /* 绿色 */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .btn-vote:hover {
+            background-color: #218838; /* 深绿色 */
         }
     </style>
 </head>
@@ -146,7 +164,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">Witness ID</div>
-                        <div class="card-content">ety001</div>
+                        <div class="card-content">
+                            ety001
+                            <button class="btn-vote" onclick="window.open('https://steemyy.com/witness-voting/?action=approve&witness=ety001', '_blank')">Vote ME</button>
+                        </div>
                     </div>
                 </div>
             </div>
